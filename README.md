@@ -26,7 +26,7 @@ MEMBASE_ACCOUNT=<Membase account address>
 ### Basic Integration
 
 ```typescript
-import { mPlugin } from "@eliza/plugin-membase";
+import { mPlugin } from "@elizaos/plugin-membase";
 ```
 
 ### Message Upload Example
