@@ -4,7 +4,9 @@ A plugin for storing memory using the membase protocol within the ElizaOS ecosys
 
 ## Description
 
-The membase plugin enables seamless integration with the Membase protocol for decentralized storage. It provides functionality to upload memory to the Unibase DA network.
+Membase is a core component of the Unibase ecosystem. It stores historical information, interaction records, and persistent data of Agents, ensuring their continuity and traceability.
+
+The membase plugin enables seamless integration with the membase protocol for decentralized storage. It provides functionality to upload memory to the Unibase DA network.
 
 ## Installation
 
@@ -17,7 +19,7 @@ pnpm install @elizaos/plugin-membase
 The plugin requires the following environment variables to be set:
 
 ```typescript
-MEMBASE_HUB=<Membase hub endpoint>
+MEMBASE_HUB=<Membase hub endpoint, default is 'https://testnet.hub.membase.io' >
 MEMBASE_ACCOUNT=<Membase account address>
 ```
 
@@ -35,7 +37,7 @@ import { mPlugin } from "@elizaos/plugin-membase";
 // The plugin automatically handles memory uploads when triggered
 // through natural language commands like:
 
-"save mesage in membase";
+"save message in membase";
 "store memory on membase";
 ```
 
