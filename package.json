@@ -1,6 +1,6 @@
 {
     "name": "@elizaos-plugins/plugin-membase",
-    "version": "0.25.6-alpha.1",
+    "version": "0.2.0",
     "type": "module",
     "main": "dist/index.js",
     "module": "dist/index.js",
@@ -43,5 +43,18 @@
     },
     "publishConfig": {
         "access": "public"
+    },
+    "agentConfig": {
+        "pluginType": "elizaos:client:1.0.0",
+        "pluginParameters": {
+            "MEMBASE_HUB": {
+                "type": "string",
+                "description": "The hub endpoint to connect to"
+            },
+            "MEMBASE_ACCOUNT": {
+                "type": "string",
+                "description": "The account used to connect to membase"
+            }
+        }
     }
 }
